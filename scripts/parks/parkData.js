@@ -8,4 +8,5 @@ const getParkData = () => {
         parkCollection = arrayOfParks;
         console.log(parkCollection);
     })
+    return parkCollection
 }
