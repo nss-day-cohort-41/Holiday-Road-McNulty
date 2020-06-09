@@ -6,5 +6,10 @@ getBizarreData().then(
 getEateryData().then(
     () => {
         eateryList();
+    })
+
+getParkData().then(
+    () => {
+        parkList();
     }
 )
