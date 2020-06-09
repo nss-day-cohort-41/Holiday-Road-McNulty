@@ -1,0 +1,5 @@
+getBizarreData().then(
+    () => {
+        bizarreList();
+    }
+)
