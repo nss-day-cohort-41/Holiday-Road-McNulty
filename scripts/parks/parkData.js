@@ -9,17 +9,8 @@ const getParkData = (userChoice) => {
         }
     ).then((arrayOfParks) => {
         parkCollection = arrayOfParks;
-        console.log(parkCollection);
-<<<<<<< HEAD
-    })
-    return parkCollection
-}
-
-
-
-=======
+        parkList(parkCollection);
       }
      )
     }
 }
->>>>>>> master

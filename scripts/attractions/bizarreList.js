@@ -13,8 +13,5 @@ const bizarreList = () => {
 //     bizarreDropdown.addEventListener("change", clickEvent => {
 //     const userChoice = clickEvent.target.value;
 
-//   if (userChoice === ) {
-//     console.log()
-//   }
-// })
+
 
