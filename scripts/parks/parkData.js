@@ -1,6 +1,6 @@
 let parkCollection = [];
 
-const getParkData = () => {
+const getParkData = (userChoice) => {
     {
     return fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${userChoice}&sort=&api_key=vw3gSXfcGrhrPdn1uVdQBfCAqmTtbaL1VsFVDbNn`).then( 
         (httpResponse) => {
@@ -12,5 +12,4 @@ const getParkData = () => {
       }
      )
     }
-    return parkCollection
 }

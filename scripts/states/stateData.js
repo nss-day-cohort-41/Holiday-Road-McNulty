@@ -20,8 +20,8 @@ const getStateData = () => {
 
 const stateDropdown = document.querySelector(".stateChoice");
     stateDropdown.addEventListener("change", clickEvent => {
-   userChoice = clickEvent.target.value;
-   
-       console.log(userChoice)
+    userChoice = clickEvent.target.value;
+       console.log("Selected Value:", userChoice)
+       getParkData(userChoice)
     }
 )
