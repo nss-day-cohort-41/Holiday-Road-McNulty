@@ -1,0 +1,29 @@
+
+/* NOTE TO GROUP: This is a css control page for the LocationLIST items, might need to talk about moving to selections.CSS */
+
+
+.locationList {
+width: 23px;
+height: 28px;
+position: absolute;
+display: inline-block;
+flex-direction: center;
+top: 1px;
+right: 3px;
+pointer-events: none;
+
+}
+.regionChoice, .parkChoice, .eateryChoice, .bizarreChoice {
+    font-family: 'Bebas Neue', cursive; /* IMPORTED FONT */
+    font-size: 20px;
+    display: inline-block;
+    height: 30px; /* CONTROLS HEIGHT OF ALL SELECT BOXES */
+    width: 225px; /* CONTROLS WIDTH OF ALL SELECT BOXES */
+    outline: none;
+    color: rgb(0, 0, 0); /*TEXT COlOR*/
+    border: 2px solid rgb(233, 124, 23);    /*Controls the outline of the border on the select box */
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 2px #DDD8DC;
+    background: rgb(218, 35, 35); /*COLOR CONTROL FOR the BOX's FILL */
+  }
+  /* ALL Styling-METHODS Above CAN BE REFERENCED TO https://stackoverflow.com/questions/1895476/how-do-i-style-a-select-dropdown-with-only-css */
