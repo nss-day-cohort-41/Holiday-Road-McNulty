@@ -5,5 +5,4 @@ const parkList = () => {
     const parkSelectElement = document.querySelector(".parkChoice");
     parkSelectElement.innerHTML += parkHTML;
   }
-
 }

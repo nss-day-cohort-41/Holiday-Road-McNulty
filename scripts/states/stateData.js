@@ -25,3 +25,4 @@ const stateDropdown = document.querySelector(".stateChoice");
        getParkData(userChoice)
     }
 )
+
