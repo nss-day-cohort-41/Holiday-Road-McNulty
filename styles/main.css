@@ -1,0 +1,46 @@
+@import "banner.css";
+@import "footer.css";
+@import "header.css";
+@import "locations.css";
+@import "savedItenerary.css";
+@import "selections.css";
+
+
+html{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F09%2FHiking-dventure-Wallpaper.jpg&f=1&nofb=1);
+    background-size: cover;
+    opacity: 100%;
+}
+
+
+/* FOUNDATIONAL CONTAINER TARGETING/FLEX... */
+.container {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid rgb(0, 0, 0);   DELETE: BORDER ASSIGNED FOR TRAINING */
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.underTheBanner {
+
+}
+
+.underTheBanner__left {
+
+}
+
+.underTheBanner__right {
+
+}
+
+.footer{
+
+}
+
+/* END CONTAINER TARGET */

@@ -1,0 +1,34 @@
+.banner {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.geocaching.com%2Fcache%2Flog%2Fb65d20de-0c65-44e5-9053-f296b679bab5.jpg&f=1&nofb=1);
+    background-size: cover;
+    max-width: auto; /* Controls the banners stretch horozontialy, and is set to hopefully lock to (viewing)screen adjustments */
+    max-height: 10em; /* Controls How far the banner background stretchs verticaly */
+    float:center;
+    border-radius: 25px; /* CONTROLS THE CORNERS DEPTH ON THE MAIN BANNER PICTURE */
+
+
+}
+/* Targets the LOGO TO THE LEFT OF TITLE */
+.bannerLogo {
+    float: left;
+    max-width: auto; 
+    max-height: 15em;
+
+}
+/* Targets Main Title */
+.bannerTitle1 {
+    float: center;
+    font-size: 75px;
+    font-family: 'Holtwood One SC', serif;
+    color: whitesmoke;
+    text-shadow: 1px 1px rgb(228, 148, 74);
+    
+}
+/* Targets Second Header  */
+.bannerTitle2 {
+    float: center;
+    font-size: 30px;
+    font-family: 'Holtwood One SC', serif;
+    color: whitesmoke;
+    text-shadow: 1px 1px rgb(228, 148, 74), 5px 5px rgb(160, 95, 95);  
+}
