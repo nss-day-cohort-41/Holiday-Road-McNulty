@@ -16,31 +16,36 @@ html{
 /* FOUNDATIONAL CONTAINER TARGETING/FLEX... */
 .container {
     display: flex;
-    flex-direction: column;
-    /* border: 3px solid rgb(0, 0, 0);   DELETE: BORDER ASSIGNED FOR TRAINING */
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .banner{
     display: flex;
     flex-direction: row;
-    
+    border: 3px solid rgb(0, 0, 0);   
 
 }
 
 .underTheBanner {
-
+   display: flex;
+    flex-basis: row;
+    border: 3px solid rgb(0, 0, 0);   
 }
 
 .underTheBanner__left {
-
+    display: flex;
+    flex-direction: column;
+    flex: 3.5;
+    justify-content: left;
+    border: 3px solid rgb(0, 0, 0);   
 }
 
 .underTheBanner__right {
-
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: right;
+    border: 3px solid rgb(0, 0, 0);   
 }
-
-.footer{
-
-}
-
 /* END CONTAINER TARGET */
