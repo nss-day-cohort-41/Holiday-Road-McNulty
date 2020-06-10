@@ -1,5 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.underBanner {
+    display: flex;
+
+}
+
+.underBanner__Left {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.underBanner__Right {
+    
+    flex:1;
+}
+
+.locationsList {
+    height: 50px;
+}
+
 .selectionContainer {
-    border: black 2px solid;
+    background-color: black;
     display: flex;
     flex-direction: row;
 
@@ -9,14 +34,15 @@
     background-color: red;
     height: 500px;
     width: 75%;
-    margin-top: 20px;
-
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .selectionDetails {
     background-color: gold;
     height: 500px;
-    width: 25%;
+    width: 35%;
     margin: 20px;
 }
 
@@ -34,13 +60,41 @@
     flex-direction: row;
     margin: 20px 20px 20px 20px;
 }
-
-
-
-
+/* 
+.weatherContainer {
+    height: 100px;
+    width: 75%;
+    background-color: magenta;
+}
 
 .weatherForecast {
-    /* display: flex;
-    flex-direction: column;     */
+    display: flex;
+    flex-direction: column;
 
+} */
+
+.savedItinerary {
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 85%;
+    margin: 50px 0 0 20px;
+}
+
+.submitButtonContainer {
+    height: 50px;
+    width: 75%;
+    background-color: indigo;
+    margin: 20px;
+}
+
+.submitButton {
+    height: 30px;
+    width: 90%;
+    background-color: darkslategrey;
+    margin-left: 20px;
+    margin: 8px;
+    
+    
 }
