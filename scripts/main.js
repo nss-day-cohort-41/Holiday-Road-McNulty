@@ -13,10 +13,17 @@ weatherForecastProvider().then(
 getEateryData().then(
     () => {
         eateryList();
-    })
+    }
+)
 
 getParkData().then(
     () => {
         parkList();
+    }
+)
+
+getStateData().then(
+    () => {
+        stateList();
     }
 )
