@@ -1,4 +1,5 @@
 let stateCollection = []
+let userChoice = "";
 
 const getStateData = () => {
     return fetch("http://localhost:8088/states").then(
@@ -15,3 +16,12 @@ const getStateData = () => {
         )
     return stateCollection
 }
+
+
+const stateDropdown = document.querySelector(".stateChoice");
+    stateDropdown.addEventListener("change", clickEvent => {
+   userChoice = clickEvent.target.value;
+   
+       console.log(userChoice)
+    }
+)

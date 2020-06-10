@@ -16,14 +16,14 @@ getEateryData().then(
     }
 )
 
-getParkData().then(
-    () => {
-        parkList();
-    }
-)
-
 getStateData().then(
     () => {
         stateList();
+    }
+)
+
+getParkData().then(
+    () => {
+        parkList();
     }
 )
