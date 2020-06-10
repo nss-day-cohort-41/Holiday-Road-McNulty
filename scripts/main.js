@@ -13,7 +13,14 @@ weatherForecastProvider().then(
 getEateryData().then(
     () => {
         eateryList();
-    })
+    }
+)
+
+getStateData().then(
+    () => {
+        stateList();
+    }
+)
 
 getParkData().then(
     () => {
