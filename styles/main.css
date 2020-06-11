@@ -2,7 +2,7 @@
 @import "footer.css";
 @import "header.css";
 @import "locations.css";
-@import "savedItenerary.css";
+@import "savedItinerary.css";
 @import "selections.css";
 
 
@@ -12,35 +12,60 @@ html{
     opacity: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
 
 /* FOUNDATIONAL CONTAINER TARGETING/FLEX... */
 .container {
     display: flex;
-    flex-direction: column;
-    /* border: 3px solid rgb(0, 0, 0);   DELETE: BORDER ASSIGNED FOR TRAINING */
+  
 }
 
+/*  ALL MAIN FLEX TARGETING*/
 .banner{
     display: flex;
-    flex-direction: row;
-    
-
 }
 
-.underTheBanner {
-
+.underBanner {
+    border: 12px solid rgb(230, 112, 112); /* CONTAINER BORDER FOR REF, WILL DELETE LATER*/
+    border-radius: 10px; /* CONTAINER BORDER FOR REF, WILL DELETE LATER*/
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+    padding: 10px;
+    margin: 10px;
 }
 
-.underTheBanner__left {
-
+.underBanner__Left {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
 }
 
-.underTheBanner__right {
-
+.underBanner__Right {
+    display:flex;
+    flex-direction: column;
+    flex:1;
 }
 
 .footer{
-
+    display: flex;
 }
-
 /* END CONTAINER TARGET */
+
+
+
+
+
+
+
+
+
+
