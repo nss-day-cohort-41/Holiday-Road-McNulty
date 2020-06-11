@@ -14,12 +14,12 @@ const eateryConverter = (eateryObject) => {
 /* 
 
 // Converter to send in new information to the preview dropdown
-const EateryPreviewConverter = (eateryCollection, .businessName) =>{
+const eateryPreviewConverter = (eateryObject) =>{
     const eateryPreviewHTML =
 `
     
 <ul>
-<li>${eateryCollection.buisnessName}</li>
+<li>${eateryObject.buisnessName}</li>
 <li> </li>
 </ul>
 
