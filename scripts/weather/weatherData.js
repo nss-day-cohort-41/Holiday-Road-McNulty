@@ -15,7 +15,7 @@ const weatherForecastProvider = (lat, long) => {
     ).then((arrayOfWeatherForecasting) => {
             weatherForecastData = arrayOfWeatherForecasting;
             clearWeatherForecast();
-            //invoking weatherList function passing in the individual weather array of the specified park chosen in order to display it to the browser
+            //invoking weatherList function passing in the individual weather array information of the specified park chosen in order to display it to the browser
             weatherList(weatherForecastData)
     })
 }

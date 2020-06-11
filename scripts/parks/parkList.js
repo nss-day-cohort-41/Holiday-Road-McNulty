@@ -27,3 +27,18 @@ const parkDropdown = document.querySelector(".parkChoice");
           weatherForecastProvider(weatherObject.latitude, weatherObject.longitude)
             }
           )
+
+// delete from here; trial code to get park to appear in preview list
+
+  
+//   for (const parkObj of parkCollection.data) {
+//     const parkPreviewHTML = parkPreviewConverter(parkObj)
+//   const parkDropdown = document.querySelector(".parkChoice");
+//   parkDropdown.addEventListener("change", clickEvent => {
+//     const choice = clickEvent.target.value;
+//     if (choice === parkObj.name) {
+//     const contentTarget = document.querySelector(".previewSelection")
+//     contentTarget.innerHTML += parkPreviewHTML;
+//   }
+//   })
+// }
