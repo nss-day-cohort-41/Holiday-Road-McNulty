@@ -13,7 +13,6 @@ const weatherForecastProvider = (lat, long) => {
             return httpResponse.json()
         }
     ).then((arrayOfWeatherForecasting) => {
-        console.log("john's test", arrayOfWeatherForecasting);
             weatherForecastData = arrayOfWeatherForecasting;
             clearWeatherForecast();
             //invoking weatherList function passing in the individual weather array information of the specified park chosen in order to display it to the browser
