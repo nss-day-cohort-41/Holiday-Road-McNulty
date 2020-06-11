@@ -3,6 +3,9 @@
 
 	"states":[
 		{
+			"abbreviation": "Select a State"
+		},
+		{
 			"name": "Alabama",
 			"abbreviation": "AL"
 		},

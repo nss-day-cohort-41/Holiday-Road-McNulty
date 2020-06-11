@@ -1,5 +1,5 @@
 let stateCollection = []
-let userChoice = "";
+
 
 const getStateData = () => {
     return fetch("http://localhost:8088/states").then(

@@ -48,7 +48,7 @@
     padding: auto;
     box-shadow: 5px 5px 4px orangered ;
 }
-.weatherForecast1 {
+.weatherForecast {
     display: flex;
     align-content: flex-start;
     height: 60px;
