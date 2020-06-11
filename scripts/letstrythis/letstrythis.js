@@ -1,5 +1,5 @@
 
-// lines 9-10 are where the magic happens
+// lines 10-11 are where the magic happens
 
 // const stateDropdown = document.querySelector(".stateChoice");
 //     stateDropdown.addEventListener("change", clickEvent => {
