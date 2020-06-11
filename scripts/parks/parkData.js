@@ -9,7 +9,7 @@ const getParkData = (userChoice) => {
         }
     ).then((arrayOfParks) => {
         parkCollection = arrayOfParks;
-        console.log(parkCollection);
+        parkList(parkCollection);
       }
      )
     }
