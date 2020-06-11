@@ -1,9 +1,30 @@
 const eateryConverter = (eateryObject) => {
-    const eateryHTMLRepresentation =  `
+    const eateryHTML =  `
     
-        <option class="eateryOption">${eateryObject.businessName}</option>
+        <option class="eateryOption">${eateryObject.businessName},${eateryObject.state}</option>
     
     `
-    // , ${eateryObject.state}
-    return eateryHTMLRepresentation;
+   
+    return eateryHTML;
 }
+
+
+
+
+/* 
+
+// Converter to send in new information to the preview dropdown
+const eateryPreviewConverter = (eateryObject) =>{
+    const eateryPreviewHTML =
+`
+    
+<ul>
+<li>${eateryObject.buisnessName}</li>
+<li> </li>
+</ul>
+
+`
+ return eateryPreviewHTML;
+}
+
+ */
