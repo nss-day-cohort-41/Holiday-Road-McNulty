@@ -1,4 +1,4 @@
-const weatherList = () => {
+const weatherList = (weatherForecastData) => {
     
     for (const currentWeatherObject of weatherForecastData.list) {
         const weatherHTML = weatherForecastConverter(currentWeatherObject);
@@ -6,3 +6,5 @@ const weatherList = () => {
         weatherArticleElement.innerHTML += weatherHTML
     }
 }
+
+
