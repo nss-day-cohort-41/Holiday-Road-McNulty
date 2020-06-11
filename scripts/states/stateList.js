@@ -15,15 +15,17 @@ const clearParksDropdown = () => {
 
 let userChoice = "";
 //Click event that takes user's state selection and stores the state abbreviation in userChoice then calls the getParkData function to displays the list of parks associated with that state
+//do not delete
 const stateDropdown = document.querySelector(".stateChoice");
-    stateDropdown.addEventListener("change", clickEvent => {
-    userChoice = clickEvent.target.value;
-    if (userChoice !== undefined) {
-        clearParksDropdown();
-        console.log("Selected Value:", userChoice)
-         getParkData(userChoice);
-      }
-      
-    }
+stateDropdown.addEventListener("change", clickEvent => {
+userChoice = clickEvent.target.value;
+if (userChoice !== undefined) {
+    clearParksDropdown();
+    console.log("Selected Value:", userChoice)
+    
+     getParkData(userChoice);
+  }
+  
+}
 )
 
