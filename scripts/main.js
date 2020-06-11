@@ -27,3 +27,5 @@ getParkData().then(
         parkList();
     }
 )
+
+saveYourItinerary()
