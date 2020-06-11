@@ -2,7 +2,7 @@
 @import "footer.css";
 @import "header.css";
 @import "locations.css";
-@import "savedItenerary.css";
+@import "savedItinerary.css";
 @import "selections.css";
 
 
@@ -12,40 +12,60 @@ html{
     opacity: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
 
 /* FOUNDATIONAL CONTAINER TARGETING/FLEX... */
 .container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+  
 }
 
+/*  ALL MAIN FLEX TARGETING*/
 .banner{
     display: flex;
-    flex-direction: row;
-    border: 3px solid rgb(0, 0, 0);   
-
 }
 
-.underTheBanner {
-   display: flex;
-    flex-basis: row;
-    border: 3px solid rgb(0, 0, 0);   
+.underBanner {
+    border: 12px solid rgb(230, 112, 112); /* CONTAINER BORDER FOR REF, WILL DELETE LATER*/
+    border-radius: 10px; /* CONTAINER BORDER FOR REF, WILL DELETE LATER*/
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+    padding: 10px;
+    margin: 10px;
 }
 
-.underTheBanner__left {
+.underBanner__Left {
     display: flex;
     flex-direction: column;
-    flex: 3.5;
-    justify-content: left;
-    border: 3px solid rgb(0, 0, 0);   
+    flex: 3;
 }
 
-.underTheBanner__right {
-    display: flex;
+.underBanner__Right {
+    display:flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: right;
-    border: 3px solid rgb(0, 0, 0);   
+    flex:1;
+}
+
+.footer{
+    display: flex;
 }
 /* END CONTAINER TARGET */
+
+
+
+
+
+
+
+
+
+

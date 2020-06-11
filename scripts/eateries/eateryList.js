@@ -1,7 +1,7 @@
 
  
 //  Controls the conversion and user input being pushed to preview boxes
- const eateryDropdown = document.querySelector(".eateryChoice");
+ /* const eateryDropdown = document.querySelector(".eateryChoice");
  eateryDropdown.addEventListener("change", (clickEvent) => {
 const userChoice = clickEvent.target.value
 
@@ -10,7 +10,7 @@ if (userChoice === "eateryObject.businessName")
    
  }
 
- /* NOW I NEED TO TAKE THIS AND ADAPT A CONST THAT WORKS WITH MY HTML CONVERSION
+ NOW I NEED TO TAKE THIS AND ADAPT A CONST THAT WORKS WITH MY HTML CONVERSION
 
 
  const showHolyFish = () => {
@@ -23,7 +23,7 @@ if (userChoice === "eateryObject.businessName")
      fishArticleElement.innerHTML += holyFishHTMLRepresentation
   } 
   ----------------------------------------------------------
-  */
+
 
  const showEatery = () => {
   const eateryArray = (selectedEatery);
@@ -42,7 +42,7 @@ const eateryList = () => {
 
 
 
-
+  */
 
 
 

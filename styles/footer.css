@@ -1,0 +1,9 @@
+
+.footer {
+    height: 20px;
+    width: 100%;
+    background-color: darkslategrey;
+    padding: 20px;
+    margin: 20px;
+    align-self: center;
+}
