@@ -90,3 +90,10 @@
 }
 
 
+.Preview__Displayed {
+   font-size:40px ;
+   float: center;
+   font-size: 30px;
+   font-family: 'Holtwood One SC', serif;
+   color: whitesmoke;
+}

@@ -6,7 +6,9 @@ const bizarreList = () => {
     bizarreSelectElement.innerHTML += bizarreHTML;
   }
 }
-/* // Creating a second value to pass the object through
+/* 
+
+// Creating a second value to pass the object through
 const bizList = (bizarreObject) =>  {
   const bizarreHTML = bizarrePreviewConverter(bizarreObject);
   const bizarreSelectElement = document.querySelector(".previewBizarreSelection");
@@ -40,30 +42,6 @@ const bizarreDropdown = document.querySelector(".bizarreChoice");
         // const stateHTML = userChoice;
      })
 
+     
  */
 
-/* 
-let userBizarreChoice = "";
-
-const bizarreDropdown = document.querySelector(".bizarreChoice");
-    bizarreDropdown.addEventListener("change", clickEvent => {
-    userBizarreChoice = clickEvent.target.value;
- //   if (userEateryChoice !== undefined) {
-       clearBizarreDropdown(); 
-       
-        console.log("Selected Value:", userBizarreChoice)
-        // const stateHTML = userChoice;
-       // getEateryData(userEateryChoice);
-        const bizarrePreviewElement = document.querySelector(".previewBizarreSelection");
-        bizarrePreviewElement.innerHTML += userBizarreChoice;
-        
-      
-      
-    }
-)
-// const bizarreDropdown = document.querySelector(".bizarreChoice");
-//     bizarreDropdown.addEventListener("change", clickEvent => {
-//     const userChoice = clickEvent.target.value;
-
-
- */
