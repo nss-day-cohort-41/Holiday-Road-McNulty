@@ -15,7 +15,7 @@ const eateryConverter = (eateryObject) => {
     const eateryPreviewHTML =
 
 ` 
-<option value= " ">${eateryObject.businessName},${eateryObject.state}</option>
+<div>${eateryObject.businessName},${eateryObject.state}</div>
 `
  return eateryPreviewHTML;
 }

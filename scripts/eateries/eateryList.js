@@ -8,8 +8,6 @@ const eateryList = () => {
     eaterySelectElement.innerHTML += eateryHTML;
   }
 }
-  /* {
-    for (const eateryObject of eateryCollection)  */
    const eatsList = (eateryObject) =>  {
     const eateryHTML = eateryPreviewConverter(eateryObject);
     const eaterySelectElement = document.querySelector(".previewEaterySelection");
@@ -19,11 +17,11 @@ const eateryList = () => {
 
  
  const clearEateryDropdown = () => {
-  const contentTarget = document.querySelector(".previewEaterySelection");
-  contentTarget.innerHTML = "";
+  const eateryTarget = document.querySelector(".previewEaterySelection");
+  eateryTarget.innerHTML = "";
 
 }
-const contentTarget = document.querySelector(".previewEaterySelection");
+const eateryTarget = document.querySelector(".previewEaterySelection");
 
 let userEateryChoice = "";
 
@@ -35,17 +33,20 @@ const eateryDropdown = document.querySelector(".eateryChoice");
    for (let eateryObject of eateryCollection) { 
      if (userEateryChoice === eateryObject.businessName){
        eatsList(eateryObject)
-     }
-
-    
-  }
+     } }
       
        
         console.log("Selected Value:", userEateryChoice)
         // const stateHTML = userChoice;
      
-    }
-)
+    })
+
+
+
+
+
+
+    
 /* const eateryPreviewList = () => {
   for (const eateryObject of eateryCollection) {
     const eateryDetailHTML = eateryPreviewConverter(eateryObject);

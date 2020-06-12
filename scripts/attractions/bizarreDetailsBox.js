@@ -1,17 +1,19 @@
 const bizarreConverter = (bizarreObject) => {
-    const bizarreHTMLRepresentation = 
+    const bizarreHTML = 
      `
-      < option value="${bizarreObject.name}">${bizarreObject.name}, ${bizarreObject.state}</option>
+      < option value= "${bizarreObject.name}" class="bizarreOption">${bizarreObject.name}, ${bizarreObject.state}</option>
 
     `
-    return bizarreHTMLRepresentation;
+    return bizarreHTML;
 }
 
-const bizarrePreviewConverter = (bizarreObject) =>{
-    const bizarrePreviewHTML =
-` 
-<div class="">${bizarreObject.name}, ${bizarreObject.state}</div>
-`
- return bizarrePreviewHTML;
-}
+
+// Converter to send in new information to the preview dropdown
+// const bizarrePreviewConverter = (bizarreObject) =>{
+//     const bizarrePreviewHTML =
+// ` 
+// <div>${bizarreObject.name}, ${bizarreObject.state}</div>
+// `
+//  return bizarrePreviewHTML;
+// }
 
