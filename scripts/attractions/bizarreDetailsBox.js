@@ -2,7 +2,6 @@ const bizarreConverter = (bizarreObject) => {
     const bizarreHTML = 
      `
       <option value="${bizarreObject.name}" class="bizarreOption">${bizarreObject.name}, ${bizarreObject.state}</option>
-
     `
     return bizarreHTML;
 }
@@ -17,4 +16,3 @@ const bizarrePreviewConverter = (bizarreObject) =>{
 `
  return bizarrePreviewHTML;
 }
-

@@ -1,16 +1,16 @@
 //function to show state in dropdown
 const stateList = () => {
-    for (const currentStateObject of stateCollection) {
-    const stateHTML = stateConverter(currentStateObject);
-    const stateSelectElement = document.querySelector(".stateChoice");
-    stateSelectElement.innerHTML += stateHTML;
-  }
+  for (const currentStateObject of stateCollection) {
+  const stateHTML = stateConverter(currentStateObject);
+  const stateSelectElement = document.querySelector(".stateChoice");
+  stateSelectElement.innerHTML += stateHTML;
+}
 
 }
 
 const clearParksDropdown = () => {
-  const contentTarget = document.querySelector(".parkChoice");
-  contentTarget.innerHTML = "";
+const contentTarget = document.querySelector(".parkChoice");
+contentTarget.innerHTML = "";
 }
 
 let userChoice = "";
@@ -21,12 +21,11 @@ const stateDropdown = document.querySelector(".stateChoice");
 stateDropdown.addEventListener("change", clickEvent => {
 userChoice = clickEvent.target.value;
 if (userChoice !== undefined) {
-    clearParksDropdown();
-    console.log("Selected Value:", userChoice)
-    
-     getParkData(userChoice);
-  }
+  clearParksDropdown();
+  console.log("Selected Value:", userChoice)
   
+   getParkData(userChoice);
+}
+
 }
 )
-

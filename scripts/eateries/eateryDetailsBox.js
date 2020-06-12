@@ -19,4 +19,3 @@ const eateryConverter = (eateryObject) => {
 `
  return eateryPreviewHTML;
 }
-
