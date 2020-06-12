@@ -23,7 +23,4 @@ getEateryData().then(
     }
 )
 
-<<<<<<< HEAD
-=======
 saveYourItinerary()
->>>>>>> master
