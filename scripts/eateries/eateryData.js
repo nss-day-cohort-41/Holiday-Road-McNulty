@@ -9,6 +9,6 @@ const getEateryData = () => {
         }
     ).then((arrayOfEateries) => {
         eateryCollection = arrayOfEateries;
-        console.log(eateryCollection);
+    
     })
 }
