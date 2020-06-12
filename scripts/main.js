@@ -1,21 +1,3 @@
-getBizarreData().then(
-    () => {
-        bizarreList();
-    }
-)
-
-weatherForecastProvider().then(
-    () => {
-        weatherList();
-    }
-)
-
-getEateryData().then(
-    () => {
-        eateryList();
-    }
-)
-
 getStateData().then(
     () => {
         stateList();
@@ -25,6 +7,19 @@ getStateData().then(
 getParkData().then(
     () => {
         parkList();
+    }
+)
+
+
+getBizarreData().then(
+    () => {
+        bizarreList();
+    }
+)
+
+getEateryData().then(
+    () => {
+        eateryList();
     }
 )
 

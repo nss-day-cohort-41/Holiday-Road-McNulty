@@ -1,7 +1,7 @@
 const eateryConverter = (eateryObject) => {
     const eateryHTML =  `
     
-        <option class="eateryOption">${eateryObject.businessName},${eateryObject.state}</option>
+        <option value=${eateryObject.businessName} class="eateryOption">${eateryObject.businessName},${eateryObject.state}</option>
     
     `
    
