@@ -1,7 +1,7 @@
 let weatherForecastData = [];
 
 //function to clear the weather data before new park selected
-const contentTarget = document.querySelector(".weatherContainer");
+const contentTarget = document.querySelector(".weatherForecast");
 const clearWeatherForecast = () => {
     contentTarget.innerHTML = "";
   }
