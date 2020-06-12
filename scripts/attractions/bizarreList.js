@@ -6,7 +6,7 @@ const bizarreList = () => {
     bizarreSelectElement.innerHTML += bizarreHTML;
   }
 }
-/* 
+ 
 
 // Creating a second value to pass the object through
 const bizList = (bizarreObject) =>  {
@@ -42,6 +42,6 @@ const bizarreDropdown = document.querySelector(".bizarreChoice");
         // const stateHTML = userChoice;
      })
 
-     
- */
+
+
 
