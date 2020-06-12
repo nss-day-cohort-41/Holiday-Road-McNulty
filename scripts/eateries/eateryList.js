@@ -9,11 +9,3 @@ const eateryList = () => {
   }
  
 }
-
-/* const eateryConverter = document.querySelector(".stateChoice");
-eateryConverter.addEventListener("change", clickEvent => {
-    userChoice = clickEvent.target.value;
-       console.log("Selected Value:", userChoice)
-       getParkData(userChoice)
-    }
-) */
