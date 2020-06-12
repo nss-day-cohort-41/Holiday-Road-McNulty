@@ -28,3 +28,5 @@ weatherForecastProvider().then(
         weatherList();
     }
 )
+
+saveYourItinerary()
