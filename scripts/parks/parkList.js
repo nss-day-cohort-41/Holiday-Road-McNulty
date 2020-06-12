@@ -7,6 +7,7 @@ const parkList = () => {
   }
 }
 
+// --- weather ---
 let userParkChoice = "";
 let weatherObject = {};
 //function to target park dropdown, add event listener for user click
@@ -27,11 +28,17 @@ const parkDropdown = document.querySelector(".parkChoice");
           )
 // -----
 
-// function to show park details
+
+
+// function to display park details into details box
 const parkDetailsList = () => {
-  for (const currentParkDetailsObj of parkCollection.data ) {
-  const parkDetailsHTML = parkDetailsConverter(currentParkDetailsObj);
+  //iterating through each individual park in the park collection array
+  for (const currentParkDetailsObject of parkCollection.data ) {
+  //invoking the HTML converter for the park details
+  const parkDetailsHTML = parkDetailsConverter(currentParkDetailsObject);
+  // targeting the details box 
   const parkArticleElement = document.querySelector(".selectionDetails");
+  //changing content of details box to the HTML string interpolation (display it in browser)
   parkArticleElement.innerHTMl += parkDetailsHTML;
   }
 }
@@ -40,18 +47,22 @@ const parkDetailsList = () => {
 const detailListClear = document.querySelector(".selectionDetails")
 const clearDetailsList = () => detailListClear.innerHTML = "";
 
-         
-
+let previewObject = {};  
+//make detail box hidden at first???
 document.querySelector(".selectionDetails").classList.toggle("hidden");
+//target the park preview button
 const previewButtonToggle = document.querySelector(".previewParkSelection");
 // add Event Listener for click of button
 previewButtonToggle.addEventListener("click", clickEvent => {
-  if (document.querySelector(".selectionDetails").style.display === "none") {
-  //call function to display HTML details on browser
-    clearDetailsList();
-    parkDetailsList();
-    console.log("hello")
-  
-  } 
+  document.querySelector(".selectionDetails").classList.toggle("hidden");
+  for (parkObject of parkCollection.data) {
+    if (userParkChoice === parkObject.name) {
+      previewObject = parkObject;
+      //call function to display HTML details on browser
+   alert("Feature coming soon");
+    }
+
+  }
   
 })
+

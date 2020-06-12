@@ -17,12 +17,24 @@ const weatherForecastProvider = (lat, long) => {
     ).then((arrayOfWeatherForecasting) => {
             weatherForecastData = arrayOfWeatherForecasting;
             clearWeatherForecast();
-            //invoking weatherList function passing in the individual weather array information of the specified park chosen in order to display it to the browser
-            weatherList(weatherForecastData);
-                  
+            //invoking weatherList function passing in the individual weather information of the specified park chosen in order to display it to the browser
+            weatherList(weatherForecastData);           
             
     })
 }
 
+// const convertDate = (weatherObject) => {
+//     let date;
+//     for (const weatherObject of weatherForecastData ) {
+//         date = new Date(weatherObject.dt * 1000);
+//         return date.toUTCString();
+//     }
+    
+// }
+// convertDate(weatherForecastData);
+
+
+// var date = new Date(1546108200 * 1000);
+//     console.log(date.toUTCString())
 
 

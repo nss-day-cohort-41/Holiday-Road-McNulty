@@ -1,3 +1,4 @@
+// HTML Converter for park dropdown display
 const parkConverter = (parkObject) => {
     const parkHTMLRepresentation =  `
     
@@ -7,18 +8,12 @@ const parkConverter = (parkObject) => {
     return parkHTMLRepresentation;
 }
 
-// const targetEateryDropdown = document.querySelector(".eateryChoice")
-// targetEateryDropdown.addEventListener("change", clickEvent => {
-//     const userEateryChoice = clickEvent.target.value;
-//     const contentTarget = document.querySelector(".previewEaterySelection");
-//     contentTarget.innerHTML = userEateryChoice;
-// })
-
+// HTML Converter for details box
 const parkDetailsConverter = (parkDetailsObject) => {
     const parkDetailsHTMLRep = `
              
         <ul>
-            
+            <li>Name: ${parkDetailsObject.name}</li>
             <li>Directions: ${parkDetailsObject.directionsUrl}</li>
         </ul>
         
