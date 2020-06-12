@@ -1,3 +1,5 @@
+
+
 let parkCollection = [];
 
 //Responsible for fetching park list based on user selected state
