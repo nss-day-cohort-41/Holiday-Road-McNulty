@@ -7,3 +7,16 @@ const eateryConverter = (eateryObject) => {
    
     return eateryHTML;
 }
+
+
+
+// Converter to send in new information to the preview dropdown
+//  const eateryPreviewConverter = (eateryObject) =>{
+//     const eateryPreviewHTML =
+
+// ` 
+// <div class="Preview__Displayed">${eateryObject.businessName},${eateryObject.state}</div>
+// `
+//  return eateryPreviewHTML;
+// }
+
