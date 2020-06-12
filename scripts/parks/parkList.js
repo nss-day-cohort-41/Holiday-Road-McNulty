@@ -7,8 +7,6 @@ const parkList = () => {
   }
 }
 
-
-
 let userParkChoice = "";
 let weatherObject = {};
 //function to target park dropdown, add event listener for user click
@@ -17,7 +15,7 @@ const parkDropdown = document.querySelector(".parkChoice");
     //this variable will register the value of the user's selection
      userParkChoice = clickEvent.target.value
      //iterate through the user's chosen state data
-     for (parkObject of parkCollection.data) {
+     for (const parkObject of parkCollection.data) {
        //if the user's park choice is equal to the name of the park (ie value of the option chosen)
        if (userParkChoice === parkObject.name) {
          //the empty weatherObject will then have the value of the parkObject(which contains individual park data chosen by user)
@@ -27,18 +25,33 @@ const parkDropdown = document.querySelector(".parkChoice");
           weatherForecastProvider(weatherObject.latitude, weatherObject.longitude)
             }
           )
+// -----
 
-// delete from here; trial code to get park to appear in preview list
+// function to show park details
+const parkDetailsList = () => {
+  for (const currentParkDetailsObj of parkCollection.data ) {
+  const parkDetailsHTML = parkDetailsConverter(currentParkDetailsObj);
+  const parkArticleElement = document.querySelector(".selectionDetails");
+  parkArticleElement.innerHTMl += parkDetailsHTML;
+  }
+}
 
+// clear details List
+const detailListClear = document.querySelector(".selectionDetails")
+const clearDetailsList = () => detailListClear.innerHTML = "";
+
+         
+
+document.querySelector(".selectionDetails").classList.toggle("hidden");
+const previewButtonToggle = document.querySelector(".previewParkSelection");
+// add Event Listener for click of button
+previewButtonToggle.addEventListener("click", clickEvent => {
+  if (document.querySelector(".selectionDetails").style.display === "none") {
+  //call function to display HTML details on browser
+    clearDetailsList();
+    parkDetailsList();
+    console.log("hello")
   
-//   for (const parkObj of parkCollection.data) {
-//     const parkPreviewHTML = parkPreviewConverter(parkObj)
-//   const parkDropdown = document.querySelector(".parkChoice");
-//   parkDropdown.addEventListener("change", clickEvent => {
-//     const choice = clickEvent.target.value;
-//     if (choice === parkObj.name) {
-//     const contentTarget = document.querySelector(".previewSelection")
-//     contentTarget.innerHTML += parkPreviewHTML;
-//   }
-//   })
-// }
+  } 
+  
+})

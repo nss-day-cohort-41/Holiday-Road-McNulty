@@ -1,8 +1,11 @@
 
 /* Start of Selection Container */
+.hidden {
+    display:none;
+}
 
 .selectionContainer {
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
