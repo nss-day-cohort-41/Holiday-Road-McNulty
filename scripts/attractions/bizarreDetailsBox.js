@@ -6,3 +6,4 @@ const bizarreConverter = (bizarreObject) => {
     `
     return bizarreHTMLRepresentation;
 }
+

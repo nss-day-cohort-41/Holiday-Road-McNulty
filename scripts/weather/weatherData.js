@@ -8,9 +8,13 @@ const clearWeatherForecast = () => {
 
 //function that fetches weather data passing in the latitude and longitude of the user chosen park
 const weatherForecastProvider = (lat, long) => {
+<<<<<<< HEAD
         
     return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&
     exclude=current,minutely,hourly&units=imperial&cnt=5&appid=${keys.weatherKey}`).then(
+=======
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${keys.weatherKey}`).then(
+>>>>>>> master
         (httpResponse) => {
             return httpResponse.json()
         }
