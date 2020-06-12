@@ -12,7 +12,7 @@ const bizarreConverter = (bizarreObject) => {
 const bizarrePreviewConverter = (bizarreObject) =>{
     const bizarrePreviewHTML =
 ` 
-<div>${bizarreObject.name}, ${bizarreObject.state}</div>
+<div class="Preview__Displayed">${bizarreObject.name}, ${bizarreObject.state}</div>
 `
  return bizarrePreviewHTML;
 }
