@@ -1,4 +1,5 @@
 let bizarreCollection = [];
+
 const getBizarreData = () => {
     return fetch("http://holidayroad.nss.team/bizarreries").then( 
         (httpResponse) => {
