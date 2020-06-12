@@ -1,4 +1,3 @@
-
 getStateData().then(
     () => {
         stateList();
@@ -10,7 +9,6 @@ getParkData().then(
         parkList();
     }
 )
-
 
 getBizarreData().then(
     () => {

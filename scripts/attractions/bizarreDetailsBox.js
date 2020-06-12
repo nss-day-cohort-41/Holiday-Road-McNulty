@@ -10,12 +10,11 @@ const bizarreConverter = (bizarreObject) => {
 
 // Converter to send in new information to the preview dropdown
 
-
-// const bizarrePreviewConverter = (bizarreObject) =>{
-//     const bizarrePreviewHTML =
-// ` 
-// <div>${bizarreObject.name}, ${bizarreObject.state}</div>
-// `
-//  return bizarrePreviewHTML;
-// }
+const bizarrePreviewConverter = (bizarreObject) =>{
+    const bizarrePreviewHTML =
+` 
+<div>${bizarreObject.name}, ${bizarreObject.state}</div>
+`
+ return bizarrePreviewHTML;
+}
 
