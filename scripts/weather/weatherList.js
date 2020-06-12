@@ -3,7 +3,7 @@ const weatherList = (weatherForecastData) => {
     
     for (const currentWeatherObject of weatherForecastData.daily) {
         const weatherHTML = weatherForecastConverter(currentWeatherObject);
-        const weatherArticleElement = document.querySelector(".weatherContainer");
+        const weatherArticleElement = document.querySelector(".weatherForecast");
         weatherArticleElement.innerHTML += weatherHTML
     }
 }
