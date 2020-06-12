@@ -1,5 +1,3 @@
-
-
 let eateryCollection = [];
 
 const getEateryData = () => {

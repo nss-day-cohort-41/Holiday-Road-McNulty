@@ -18,4 +18,3 @@ const parkDetailsConverter = (parkDetailsObject) => {
     `
     return parkDetailsHTMLRep
 }
-
