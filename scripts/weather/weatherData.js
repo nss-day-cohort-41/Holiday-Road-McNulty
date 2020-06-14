@@ -7,7 +7,7 @@ const clearWeatherForecast = () => {
   }
 
 //function that fetches weather data passing in the latitude and longitude of the user chosen park
-const weatherForecastProvider = (lat, long) => {
+const getWeatherForecast = (lat, long) => {
         
     return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&
     exclude=current,minutely,hourly&units=imperial&cnt=5&appid=${keys.weatherKey}`).then(
@@ -17,11 +17,15 @@ const weatherForecastProvider = (lat, long) => {
     ).then((arrayOfWeatherForecasting) => {
             weatherForecastData = arrayOfWeatherForecasting;
             clearWeatherForecast();
-            //invoking weatherList function passing in the individual weather information of the specified park chosen in order to display it to the browser
-            weatherList(weatherForecastData);           
+            //invoking weatherList function passing in the individual weather information of the specified park chosen in order to display it in the weather details box
+            weatherList();           
             
     })
 }
+
+
+
+
 
 
 

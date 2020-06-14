@@ -1,4 +1,4 @@
-let stateCollection = []
+let stateCollection = [];
 
 
 const getStateData = () => {
@@ -10,9 +10,10 @@ const getStateData = () => {
         .then(
             (arrayOfStates) => {
                 stateCollection = arrayOfStates
-                
+                stateList()
                 console.log(stateCollection)
             }
         )
     
 }
+
