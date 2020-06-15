@@ -19,3 +19,25 @@ const eateryConverter = (eateryObject) => {
 `
  return eateryPreviewHTML;
 }
+
+//Converter for EATERY DETAILS BOX 
+const eateryDetailConverter = (eateryDetailObject) => {
+    const eateryDetailHTMLRep = `
+        <ul>
+            <li>Name: ${eateryDetailObject.businessName}</li>
+            <li>Description: ${eateryDetailObject.description}</li>
+            <li>Location: ${eateryDetailObject.city}, ${eateryDetailObject.state}</li>
+            
+            <ul>
+            <li>Restrooms? ${eateryDetailObject.ameneties.restrooms}</li>
+            <li>Diaper Facility? ${eateryDetailObject.ameneties.diaperFacility}</li>
+            <li>Playground?${eateryDetailObject.ameneties.playground}</li>
+            <li>Pet Friendly? ${eateryDetailObject.ameneties.petFriendly}</li>
+            <li>Wifi? ${eateryDetailObject.ameneties.wifi}</li>
+            <li> Wheelchair Accessible? ${eateryDetailObject.ameneties.wheelchairAccessible}</li>
+            </ul>
+            
+        </ul>
+    `
+    return eateryDetailHTMLRep;
+}

@@ -1,5 +1,5 @@
 //function that displays the weather information in the browser
-const weatherList = (weatherForecastData) => {
+const weatherList = () => {
     
     for (const currentWeatherObject of weatherForecastData.daily) {
         const weatherHTML = weatherForecastConverter(currentWeatherObject);
@@ -7,6 +7,7 @@ const weatherList = (weatherForecastData) => {
         weatherArticleElement.innerHTML += weatherHTML
     }
 }
+
 
 
 

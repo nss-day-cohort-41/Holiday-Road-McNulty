@@ -1,8 +1,6 @@
 
 /* Start of Selection Container */
-.hidden {
-    display:none;
-}
+
 
 .selectionContainer {
     background-color: white;
@@ -30,6 +28,11 @@
     width: 30%;
     margin: 20px;
     box-shadow: 5px 5px 4px orangered ;
+}
+
+.details {
+    text-align: center;
+    font-size: 12px;
 }
 .previewParkSelection, .previewEaterySelection, .previewBizarreSelection {
     background-color: blue;
